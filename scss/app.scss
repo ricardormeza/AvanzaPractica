@@ -1,0 +1,58 @@
+@import 'variables';
+@import 'mixins';
+html {
+    @include box-sizing(border-box);
+}
+
+*,
+*:after,
+*:before {
+    @include box-sizing(inherit);
+}
+
+body {
+    background-color: $primario;
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+    height: 700px;
+    display: flex;
+    padding: 14rem 4rem;
+}
+
+.encabezado {
+    width: 50%;
+    max-height: 50%;
+    text-align: center;
+    color: $blanco;
+    padding: 2rem 2rem;
+    h2 {
+        font-size: 2.9rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+}
+
+button {
+    background-color: $blanco;
+    border-radius: 25px;
+    border: none;
+    color: $primario;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.formulario-login {
+    display: grid;
+    background-color: $blanco;
+    width: 50%;
+    padding: 2rem 4rem;
+    legend {
+        font-size: 2.9rem;
+        color: $primario;
+    }
+}
